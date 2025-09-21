@@ -1,0 +1,22 @@
+{
+  "name": "nododiplo-m3-s1-p4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianGodoy81/NodoDiplo-M3-S1-P4.git"
+  },
+  "author": "Cristian Godoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianGodoy81/NodoDiplo-M3-S1-P4/issues"
+  },
+  "homepage": "https://github.com/CristianGodoy81/NodoDiplo-M3-S1-P4#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
