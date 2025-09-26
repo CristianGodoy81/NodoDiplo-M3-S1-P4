@@ -14,7 +14,8 @@ export function obtenerSuperheroePorIdController(req, res){
     const superheroe = obtenerSuperheroePorId(parseInt(id));
 
     if(superheroe){
-        res.send(renderizarSuperheroe(superheroe));
+    //  res.send(renderizarSuperheroe(superheroe));
+        res.send(JSON.parse(renderizarSuperheroe(superheroe)));
     }else{
         res.status(404).send({mensaje: "Superheroe no encontrado"});
     }
@@ -25,7 +26,8 @@ export function buscarSuperheroesPorAtributoController(req, res){
     const superheroes = buscarSuperheroesPorAtributo(atributo, valor);
 
     if(superheroes.length > 0){
-        res.send(renderizarListaSuperheroes(superheroes));
+    //  res.send(renderizarListaSuperheroes(superheroes));
+        res.send(JSON.parse(renderizarListaSuperheroes(superheroes)));
     }else{
         res.status(404).send({mensaje: "No se encontraron superheroes con ese atributo"});
     }
@@ -33,5 +35,6 @@ export function buscarSuperheroesPorAtributoController(req, res){
 
 export function obtenerSuperheroesMayoresDe30Controller(req, res){
     const superheroes = obtenerSuperheroesMayoresDe30();
-    res.send(renderizarListaSuperheroes(superheroes));
+//  res.send(renderizarListaSuperheroes(superheroes));
+    res.send(JSON.parse(renderizarListaSuperheroes(superheroes)));
 };
